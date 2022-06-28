@@ -1,4 +1,6 @@
-def write_in_file():
-    with open('file.txt', 'w') as writer:
-        writer.write('I love Git')
-        return True
+def read_txt_file():
+    file = 'file.txt'
+    with open(file, 'r', encoding='utf-8') as f:
+        data = f.read()
+        print(data)
+        return data
